@@ -1,7 +1,6 @@
 # flutter_scaled_window
 
-Render a widget/app at a specified resolution inside a scaled down window. Useful for testing desktop/web apps in
-a thin window:
+Render a widget/app at a specified resolution. Useful when developing for multiple platforms.
 
 <img src="https://raw.githubusercontent.com/amokfa/flutter_scaled_window/main/readme_assets/scaled_window_demo.png" />
 
