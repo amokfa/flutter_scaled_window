@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width - 50;
+    final textStyle = TextStyle(fontSize: 40, );
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.grey.shade200,
@@ -43,8 +44,14 @@ class MyApp extends StatelessWidget {
                 elevation: 10,
                 child: SizedBox(
                   width: width / 2,
-                  child: FittedBox(
-                    child: Text('Main view, try resizing the window, (scale: $scale)'),
+                  child: Column(
+                    children: [
+                      Text("Main View", style: textStyle),
+                      Text("This app thinks it's running in a 1366x768 window", style: textStyle, textAlign: TextAlign.center,),
+                      Text("Window scale: ${scale.toStringAsFixed(2)}", style: textStyle, textAlign: TextAlign.center,),
+                    ],
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                   ),
                 ),
               ),
