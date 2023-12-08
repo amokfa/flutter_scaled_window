@@ -47,7 +47,9 @@ class MyApp extends StatelessWidget {
                   child: Column(
                     children: [
                       Text("Main View", style: textStyle),
+                      SizedBox(height: 40),
                       Text("This app thinks it's running in a 1366x768 window", style: textStyle, textAlign: TextAlign.center,),
+                      SizedBox(height: 40),
                       Text("Window scale: ${scale.toStringAsFixed(2)}", style: textStyle, textAlign: TextAlign.center,),
                     ],
                     mainAxisAlignment: MainAxisAlignment.center,
